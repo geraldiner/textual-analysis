@@ -17,13 +17,13 @@ To do this, we had to:
 
 4. Find the proper nouns based on the tags in the previous step. 
 
-There was a good point brought up that some proper nouns actually came as two words, so we had to add some tests to check what the next word was.
+  There was a good point brought up that some proper nouns actually came as two words, so we had to add some tests to check what the next word was.
 
 5. Finally, count the number of times each proper noun existed in the list.
 
 6. I added the extra step of printing the results to a text file that was easier to read.
 
-```markdown
+<code>
 ’: 135
 kurtz: 50
 project gutenberg-tm: 48
@@ -44,4 +44,12 @@ did: 8
 * *: 7
 my: 7
 ah: 7
-```
+</code>
+
+The author has some reasoning to not exclude punctuation in the beginning because of the way the NLTK algorithm understands a list of names. 
+
+> An important note here: people sometimes remove punctuation when doing a textual analysis, but here’s why I didn’t. Consider this commonly occurring phrase in all of the Potter books: “Harry, Ron and Hermione”. The comma here is pretty important used in conjunction with NLP. If I leave the sentence as-is, NLP reads it as NNP — , — NNP — CC — NNP , where CC is a conjunction. But, if I take out the comma, I get NNP — NNP — CC — NNP . With this input, my algorithm above would read ‘Harry Ron’ as a single noun, like ‘Uncle Vernon’.
+
+Without the comma, 'Harry, Ron...' would become 'Harry Ron...' which my code would pick up as a single proper noun (like someone with two first names).
+
+I'm wondering now if I could do this on the list of proper nouns. Apparently apostrophes and quotation marks are some of the most prominent `char`acters in the text. 
