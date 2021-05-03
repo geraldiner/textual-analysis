@@ -23,28 +23,28 @@ To do this, we had to:
 
 6. I added the extra step of printing the results to a text file that was easier to read.
 
-<code>
-’: 135
-kurtz: 50
-project gutenberg-tm: 48
-mr. kurtz: 47
-‘: 34
-project gutenberg: 27
-foundation: 23
-’ ‘: 21
-’ “: 16
-united: 15
-kurtz ’: 14
-literary archive: 13
-license: 9
-well: 9
-don ’: 8
-europe: 8
-did: 8
-* *: 7
-my: 7
-ah: 7
-</code>
+<pre>
+  ’: 135
+  kurtz: 50
+  project gutenberg-tm: 48
+  mr. kurtz: 47
+  ‘: 34
+  project gutenberg: 27
+  foundation: 23
+  ’ ‘: 21
+  ’ “: 16
+  united: 15
+  kurtz ’: 14
+  literary archive: 13
+  license: 9
+  well: 9
+  don ’: 8
+  europe: 8
+  did: 8
+  * *: 7
+  my: 7
+  ah: 7
+</pre>
 
 The author has some reasoning to not exclude punctuation in the beginning because of the way the NLTK algorithm understands a list of names. 
 
@@ -52,4 +52,4 @@ The author has some reasoning to not exclude punctuation in the beginning becaus
 
 Without the comma, 'Harry, Ron...' would become 'Harry Ron...' which my code would pick up as a single proper noun (like someone with two first names).
 
-I'm wondering now if I could do this on the list of proper nouns. Apparently apostrophes and quotation marks are some of the most prominent `char`acters in the text. 
+I'm wondering now if I could do this on the list of proper nouns. Apparently apostrophes and quotation marks are some of the most prominent `char`acters in the text. But if you've read *Heart of Darkness*, you'd know that it's probably Kurtz, who does come in second.
