@@ -59,4 +59,14 @@ Right now I have a bunch of comments that may or may not have a movie title in t
 
 I could try to find proper nouns here too, but movie titles can have more than two nouns in them, and I'm not sure how to handle that yet.
 
-For now, I'll keep reading the NLTK Book and looking for other examples of textual analysis.
+For now, I'll keep reading the NLTK Book and looking for other examples of textual analysis## Other Projects
+
+Check out other stuff I've worked on:
+
+**Rehabitter:** https://github.com/geraldiner/rehabitter
+
+**K.K. Radio:** https://github.com/geraldiner/kk-radio
+
+**Interactive Piano:** https://github.com/geraldiner/piano
+
+**Pom Poko Pomodoro:** https://github.com/geraldiner/pom-poko-pomodoro
