@@ -54,12 +54,13 @@ Without the comma, 'Harry, Ron...' would become 'Harry Ron...' which my code wou
 
 I'm wondering now if I could do this on the list of proper nouns. Apparently apostrophes and quotation marks are some of the most prominent `char`acters in the text. But if you've read *Heart of Darkness*, you'd know that it's probably Kurtz, who does come in second.
 
-# How is this going to help me?
+## How is this going to help me?
 Right now I have a bunch of comments that may or may not have a movie title in them. I thought the IDs I got from Pushshift were only for top level comments, but after looking over some, it seems like some might have been replies to other comments (eg. 'I really have to see that one!').
 
 I could try to find proper nouns here too, but movie titles can have more than two nouns in them, and I'm not sure how to handle that yet.
 
 For now, I'll keep reading the NLTK Book and looking for other examples of textual analysis
+
 ## Other Projects
 
 Check out other stuff I've worked on:
